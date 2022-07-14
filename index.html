@@ -3,21 +3,26 @@
 <head>
 <title>Page Title</title>
 <style>
+    .main
+    {
+        width: 100%;
+        height: 100vh;
+    }
     #myVideo {
   position: absolute;
   right: 0;
   bottom: 0;
   top: 0;
   left: 0;
-  min-width: 100%; 
-  min-height: 100%;
- object-fit: cover;
+  width: 100%; 
+  height: 100%;
+ object-fit: fill;
 }
 </style>
 </head>
 <body>
-
-    <video muted="" loop="" autoplay="" playsinline="" id="video" width="100%" height="100%" src="https://gofit.7bits.in/static/media/learn%20re.2374db30a0620af2d2c8.mp4"></video>
-
+<div class="main">
+    <video muted="" loop="" autoplay="" playsinline="" id="myVideo" width="100%" height="100%" src="https://gofit.7bits.in/static/media/learn%20re.2374db30a0620af2d2c8.mp4"></video>
+</div>
 </body>
 </html>
